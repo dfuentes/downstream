@@ -2,7 +2,11 @@
 
 `downstream` is a tool for managing and testing downstream node dependencies when you make changes upstream.
 
-## usage
+## Installing
+
+Grab the latest release from [releases](https://github.com/dfuentes/downstream/releases/), decompress it, and place it somewhere in your path.
+
+## Usage
 
 All commands must be run from the root of your node module (where your package.json resides), and assumes that you have run npm install.
 
