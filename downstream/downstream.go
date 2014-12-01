@@ -79,11 +79,10 @@ func (d *Downstream) Build(basePath string) error {
 	}
 
 	log.Println("Npm installing...")
-	if err := d.npmInstall(buildPath, basePath); err != nil {
+	if err := d.npmInstall(buildPath, ""); err != nil {
 		return err
 	}
-
-	if err := d.npmInstall(buildPath, ""); err != nil {
+	if err := d.npmInstall(buildPath, basePath); err != nil {
 		return err
 	}
 
